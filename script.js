@@ -9,14 +9,15 @@ let hisClear = document.getElementById("hisClear");
 // console.log(callHis); 
 
 let count = 0;
+let cound = 0;
 content.addEventListener("click", (h) => {
   if (h.target.className.includes("heartIcon")) {
     count++;
     favrCount.innerHTML = count;
   }
   if (h.target.className.includes("copyBtn")) {
-    count++;
-    copyCount.innerHTML = count;
+    cound++;
+    copyCount.innerHTML = cound;
     // copy korar jonno h3 tag er text ke select kora
     let card = h.target.closest(".col-js");
     const number = card.querySelector("h3").innerText;
