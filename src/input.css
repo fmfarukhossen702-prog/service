@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-sm: 570px;
+  --breakpoint-md: 720px;
+  --breakpoint-lg: 930px;
+  --breakpoint-xl: 1180px;
+
+}
+@utility container{
+    @apply mx-auto
+}
