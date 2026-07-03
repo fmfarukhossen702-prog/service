@@ -18,7 +18,7 @@ content.addEventListener("click", (h) => {
     count++;
     copyCount.innerHTML = count;
     // copy korar jonno h3 tag er text ke select kora
-    let card = h.target.closest(".col-span-2");
+    let card = h.target.closest(".col-js");
     const number = card.querySelector("h3").innerText;
     // copy kora
     navigator.clipboard.writeText(number);
@@ -27,7 +27,7 @@ content.addEventListener("click", (h) => {
   }
   if(h.target.className.includes('callBtn')){
     // alard 
-    let card = h.target.closest('.col-span-2')
+    let card = h.target.closest(".col-js");
     let title = card.querySelector('h2').innerText
     let service = card.querySelector('h4').innerText
     let number = card.querySelector('h3').innerText
